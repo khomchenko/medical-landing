@@ -175,10 +175,15 @@ table {
   border-spacing: 0; }
 
 :root {
-  --color-primary: #4DD3C3;
-  --color-secondary: #7EBE4C;
-  --color-white: #ffffff;
-  --color-black: #000000; }
+  --color-primary: #2F80ED;
+  --color-primary-background: #DDEDF5;
+  --color-secondary: #57BCF1;
+  --color-secondary-hover: #2DA9EA;
+  --color-secondary-focus: #0088CE;
+  --color-white: #FEFEFE;
+  --color-black: #1A1A1A;
+  --color-grey: #828282;
+  --color-grey-light: #F2F2F2; }
 
 * {
   margin: 0;
@@ -203,7 +208,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.6;
+  line-height: 2.6rem;
   color: var(--color-black);
   background-color: var(--color-white);
   min-height: 100vh;
@@ -214,3 +219,14 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem; }
+
+.btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  outline: none; }

@@ -14,11 +14,18 @@
 }
 
 :root {
-    --color-primary: #4DD3C3;
-    --color-secondary: #7EBE4C;;
+    --color-primary: #2F80ED;
+    --color-primary-background: #DDEDF5;
 
-    --color-white: #ffffff;
-    --color-black: #000000;
+    --color-secondary: #57BCF1;
+    --color-secondary-hover: #2DA9EA;
+    --color-secondary-focus: #0088CE;
+
+    --color-white: #FEFEFE;
+    --color-black: #1A1A1A;
+    --color-grey: #828282;
+    --color-grey-light: #F2F2F2;
+
 }
 
 * {
@@ -49,7 +56,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: normal;
-    line-height: 1.6;
+    line-height: 2.6rem;
     color: var(--color-black);
     background-color: var(--color-white);
     min-height: 100vh;
