@@ -12,9 +12,48 @@
     
     <header class="header">
         <div class="container">
-            
+            <div class="header__inner">
+                <a href="/" class="header__inner__logo">Medical</a>
+                <ul class="header__inner__nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our doctors</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
         </div>
     </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <h1 class="hero__title">Trust your health to professionals</h1>
+                <form class="hero__form" action="#">
+                    <div class="hero__form__block">
+                        <label for="type">Doctor</label>
+                        <select name="type">
+                            <option value="Сhoose a doctor">Сhoose a doctor</option>
+                        </select>
+                    </div>
+                    <div class="hero__form__block">
+                        <label for="date">Date</label>
+                        <input type="date" name="date">
+                    </div>
+                    <div class="hero__form__block">
+                        <label for="name">Your name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="hero__form__block">
+                        <label for="phone">Your phone</label>
+                        <input type="tel" name="phone">
+                    </div>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </section>
 
     <script src="./assets/js/main.js"></script>
 </body>

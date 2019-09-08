@@ -230,3 +230,9 @@ body {
   text-decoration: none;
   border: none;
   outline: none; }
+
+.hero {
+  background-image: url(../../assets/images/hero-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
