@@ -2,25 +2,40 @@
     font-size: 6rem;
     line-height: 7.3rem;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        background-color: var(--color-primary);
+        width: 17rem;
+        height: 2rem;
+        z-index: -1;
+    }
 }
 
 .heading-secondary {
     font-size: 3rem;
     line-height: 3rem;
     font-weight: 600;
-    text-align: center;
 }
 
 .heading-tertiary {
     font-size: 2rem;
     line-height: 3rem;
     font-weight: 600;
-    text-align: center;
 }
 
 .paragraph-sm {
     font-size: 1.2rem;
     line-height: 2.2rem;
     font-weight: normal;
+}
+
+strong {
+    font-weight: 600;
 }
