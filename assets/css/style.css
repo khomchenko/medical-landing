@@ -428,7 +428,8 @@ strong {
   padding: 8.5rem 0; }
   .members__inner {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative; }
   .members__wrap {
     display: flex;
     margin-top: 7rem; }
@@ -449,6 +450,30 @@ strong {
         color: var(--color-primary);
         margin-top: -3px;
         margin-bottom: 1rem; }
+    .members__wrap .swiper-container {
+      position: unset; }
+    .members__wrap .swiper-button-prev,
+    .members__wrap .swiper-button-next {
+      position: absolute;
+      top: 3.5rem;
+      width: 5rem;
+      height: 5rem;
+      background-size: unset;
+      outline: none;
+      border-radius: 100%; }
+    .members__wrap .swiper-button-next {
+      background-image: url(../../assets/images/slider/slider-next-btn.svg);
+      right: 0;
+      transition: all .3s ease; }
+      .members__wrap .swiper-button-next:focus, .members__wrap .swiper-button-next:hover {
+        background-image: url(../../assets/images/slider/slider-next-btn-hover.svg); }
+    .members__wrap .swiper-button-prev {
+      background-image: url(../../assets/images/slider/slider-prev-btn.svg);
+      left: auto;
+      right: 7rem;
+      transition: all .3s ease; }
+      .members__wrap .swiper-button-prev:focus, .members__wrap .swiper-button-prev:hover {
+        background-image: url(../../assets/images/slider/slider-prev-btn-hover.svg); }
 
 .u-margin-b-null {
   margin: 0; }
