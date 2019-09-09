@@ -263,15 +263,22 @@ strong {
   font-weight: 500;
   text-align: center;
   color: var(--color-white);
-  background: transparent;
+  background-color: var(--color-secondary);
+  border-radius: 5px;
   text-decoration: none;
   border: none;
   outline: none; }
   .btn-primary {
     width: 100%;
-    padding: 1.9rem 0;
-    background-color: var(--color-secondary);
-    border-radius: 5px; }
+    padding: 1.9rem 0; }
+    .btn-primary-sm {
+      width: fit-content;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      font-weight: 500;
+      color: var(--color-white);
+      padding: .4rem 1rem;
+      margin-left: auto; }
 
 .header {
   position: fixed;
@@ -280,7 +287,8 @@ strong {
   right: 0;
   background: var(--color-white);
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 100; }
   .header + * {
     padding-top: 8rem; }
   .header__inner {
@@ -554,6 +562,112 @@ strong {
             position: absolute;
             top: 0;
             left: -3.5rem; }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  padding-top: 17rem;
+  padding-bottom: 8.5rem; }
+  .gallery__inner {
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+  .gallery__wrap {
+    display: flex;
+    margin-top: 7.5rem; }
+    .gallery__wrap__block {
+      display: flex;
+      flex-direction: column;
+      max-width: 37rem;
+      width: 100%; }
+      .gallery__wrap__block img {
+        max-width: 100%;
+        height: 40rem;
+        object-fit: cover; }
+    .gallery__wrap .swiper-container {
+      position: unset; }
+    .gallery__wrap .swiper-button-prev,
+    .gallery__wrap .swiper-button-next {
+      position: absolute;
+      top: 3.5rem;
+      width: 5rem;
+      height: 5rem;
+      background-size: unset;
+      outline: none;
+      border-radius: 100%; }
+    .gallery__wrap .swiper-button-next {
+      background-image: url(../../assets/images/slider/slider-next-btn.svg);
+      right: 0;
+      transition: all .3s ease; }
+      .gallery__wrap .swiper-button-next:focus, .gallery__wrap .swiper-button-next:hover {
+        background-image: url(../../assets/images/slider/slider-next-btn-hover.svg); }
+    .gallery__wrap .swiper-button-prev {
+      background-image: url(../../assets/images/slider/slider-prev-btn.svg);
+      left: auto;
+      right: 7rem;
+      transition: all .3s ease; }
+      .gallery__wrap .swiper-button-prev:focus, .gallery__wrap .swiper-button-prev:hover {
+        background-image: url(../../assets/images/slider/slider-prev-btn-hover.svg); }
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  padding: 8.5rem 0; }
+  .blog__inner {
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+  .blog__wrap {
+    display: flex;
+    margin-top: 7rem; }
+    .blog__wrap__block {
+      display: flex;
+      flex-direction: column;
+      max-width: 27rem;
+      width: 100%;
+      height: inherit;
+      position: relative; }
+      .blog__wrap__block--img {
+        max-width: 100%;
+        height: 27rem;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 1.5rem; }
+      .blog__wrap__block--title {
+        color: var(--color-primary); }
+      .blog__wrap__block--descr {
+        margin-top: 1rem;
+        margin-bottom: auto; }
+      .blog__wrap__block--date {
+        position: absolute;
+        bottom: 0;
+        color: var(--color-grey); }
+      .blog__wrap__block--btn {
+        margin-top: 1.2rem; }
+    .blog__wrap .swiper-container {
+      position: unset; }
+    .blog__wrap .swiper-button-prev,
+    .blog__wrap .swiper-button-next {
+      position: absolute;
+      top: 3.5rem;
+      width: 5rem;
+      height: 5rem;
+      background-size: unset;
+      outline: none;
+      border-radius: 100%; }
+    .blog__wrap .swiper-button-next {
+      background-image: url(../../assets/images/slider/slider-next-btn.svg);
+      right: 0;
+      transition: all .3s ease; }
+      .blog__wrap .swiper-button-next:focus, .blog__wrap .swiper-button-next:hover {
+        background-image: url(../../assets/images/slider/slider-next-btn-hover.svg); }
+    .blog__wrap .swiper-button-prev {
+      background-image: url(../../assets/images/slider/slider-prev-btn.svg);
+      left: auto;
+      right: 7rem;
+      transition: all .3s ease; }
+      .blog__wrap .swiper-button-prev:focus, .blog__wrap .swiper-button-prev:hover {
+        background-image: url(../../assets/images/slider/slider-prev-btn-hover.svg); }
 
 .u-margin-b-null {
   margin: 0; }

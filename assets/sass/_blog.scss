@@ -1,0 +1,90 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    padding: 8.5rem 0;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__wrap {
+        display: flex;
+        margin-top: 7rem;
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            max-width: 27rem;
+            width: 100%;
+            height: inherit;
+            position: relative;
+
+            &--img {
+                max-width: 100%;
+                height: 27rem;
+                object-fit: cover;
+                border-radius: 5px;
+                margin-bottom: 1.5rem;
+            }
+
+            &--title {
+                color: var(--color-primary);
+            }
+
+            &--descr {
+                margin-top: 1rem;
+                margin-bottom: auto;
+            }
+
+            &--date {
+                position: absolute;
+                bottom: 0;
+                color: var(--color-grey);
+            }
+
+            &--btn {
+                margin-top: 1.2rem;
+            }
+        }
+
+        .swiper-container {
+            position: unset;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 3.5rem;
+            width: 5rem;
+            height: 5rem;
+            background-size: unset;
+            outline: none;
+            border-radius: 100%;
+        }
+        
+        .swiper-button-next {
+            background-image: url(../../assets/images/slider/slider-next-btn.svg);
+            right: 0;
+            transition: all .3s ease;
+
+            &:focus,
+            &:hover {
+                background-image: url(../../assets/images/slider/slider-next-btn-hover.svg);
+            }
+        }
+
+        .swiper-button-prev {
+            background-image: url(../../assets/images/slider/slider-prev-btn.svg);
+            left: auto;
+            right: 7rem;
+            transition: all .3s ease;
+
+            &:focus,
+            &:hover {
+                background-image: url(../../assets/images/slider/slider-prev-btn-hover.svg);
+            }
+        }
+    }
+}
