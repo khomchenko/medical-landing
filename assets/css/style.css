@@ -422,5 +422,33 @@ strong {
     .about__col strong {
       text-transform: uppercase; }
 
+.members {
+  display: flex;
+  flex-direction: column;
+  padding: 8.5rem 0; }
+  .members__inner {
+    display: flex;
+    flex-direction: column; }
+  .members__wrap {
+    display: flex;
+    margin-top: 7rem; }
+    .members__wrap__block {
+      display: flex;
+      flex-direction: column;
+      max-width: 27rem;
+      width: 100%; }
+      .members__wrap__block--img {
+        max-width: 100%;
+        height: 35.8rem;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 1.5rem; }
+      .members__wrap__block--position {
+        line-height: 2rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        margin-top: -3px;
+        margin-bottom: 1rem; }
+
 .u-margin-b-null {
   margin: 0; }
