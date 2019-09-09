@@ -4,6 +4,7 @@
     font-weight: 600;
     text-align: left;
     position: relative;
+    z-index: 1;
 
     &::after {
         content: '';

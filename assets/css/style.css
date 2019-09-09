@@ -176,7 +176,7 @@ table {
 
 :root {
   --color-primary: #2F80ED;
-  --color-primary-background: #DDEDF5;
+  --color-primary-background: #EAF4F9;
   --color-secondary: #57BCF1;
   --color-secondary-hover: #2DA9EA;
   --color-secondary-focus: #0088CE;
@@ -225,7 +225,8 @@ body {
   line-height: 7.3rem;
   font-weight: 600;
   text-align: left;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .heading-primary::after {
     content: '';
     display: block;
@@ -261,10 +262,16 @@ strong {
   line-height: 2.2rem;
   font-weight: 500;
   text-align: center;
+  color: var(--color-white);
   background: transparent;
   text-decoration: none;
   border: none;
   outline: none; }
+  .btn-primary {
+    width: 100%;
+    padding: 1.9rem 0;
+    background-color: var(--color-secondary);
+    border-radius: 5px; }
 
 .header {
   position: fixed;
@@ -499,6 +506,54 @@ strong {
       margin: 0 1.5rem;
       margin-bottom: 3rem;
       overflow: hidden; }
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary-background);
+  padding: 7.5rem 0; }
+  .offers__inner {
+    display: flex;
+    flex-direction: column; }
+  .offers__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7rem; }
+    .offers__wrap__block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: calc(33.333333% - 3rem);
+      width: 100%;
+      box-shadow: 0px 0px 10px rgba(221, 208, 208, 0.15);
+      border-radius: 5px;
+      padding: 4rem;
+      margin: 0 1.5rem;
+      overflow: hidden; }
+      .offers__wrap__block.grey {
+        border: 7px solid #C2C2C2; }
+      .offers__wrap__block.red {
+        border: 7px solid #CCA3A7; }
+      .offers__wrap__block.yellow {
+        border: 7px solid #CCC2A3; }
+      .offers__wrap__block .heading-primary::after {
+        content: unset; }
+      .offers__wrap__block .heading-secondary {
+        margin-bottom: 3rem; }
+      .offers__wrap__block .heading-tertiary {
+        margin-top: -10px; }
+      .offers__wrap__block--list {
+        margin-top: 4rem;
+        margin-bottom: auto;
+        padding-left: 3.5rem; }
+        .offers__wrap__block--list li {
+          position: relative;
+          margin-bottom: 1.5rem; }
+          .offers__wrap__block--list li::after {
+            content: url(../../assets/images/mark.svg);
+            position: absolute;
+            top: 0;
+            left: -3.5rem; }
 
 .u-margin-b-null {
   margin: 0; }
