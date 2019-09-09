@@ -669,5 +669,26 @@ strong {
       .blog__wrap .swiper-button-prev:focus, .blog__wrap .swiper-button-prev:hover {
         background-image: url(../../assets/images/slider/slider-prev-btn-hover.svg); }
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8.5rem;
+  padding-bottom: 17rem; }
+  .contacts__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative; }
+  .contacts__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    width: 100%; }
+  .contacts__map {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 30rem); }
+    .contacts__map img {
+      max-width: 100%; }
+
 .u-margin-b-null {
   margin: 0; }

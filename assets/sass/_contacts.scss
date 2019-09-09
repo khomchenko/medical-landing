@@ -1,0 +1,41 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8.5rem;
+    padding-bottom: 17rem;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        width: 100%;
+
+        &__tel {
+
+        }
+
+        &__email {
+
+        }
+
+        &__address {
+
+        }
+    }
+
+    &__map {
+        display: flex;
+        justify-content: flex-end;
+        width: calc(100% - 30rem);
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
