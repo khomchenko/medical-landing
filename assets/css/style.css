@@ -321,6 +321,62 @@ strong {
         color: inherit;
         text-decoration: none; }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary-background); }
+  .footer__inner {
+    display: flex;
+    padding: 5rem 0; }
+    .footer__inner__logo {
+      font-size: 3.5rem;
+      line-height: 4.3rem;
+      font-weight: 900;
+      text-decoration: none;
+      color: inherit;
+      max-width: 17.5rem;
+      width: 100%;
+      object-fit: contain;
+      margin-right: 3rem; }
+    .footer__inner__texts {
+      max-width: 47rem;
+      width: 100%;
+      margin-right: 3rem; }
+    .footer__inner__menu {
+      display: flex;
+      flex-direction: column;
+      max-width: 11.5rem;
+      width: 100%;
+      margin-right: 9rem; }
+      .footer__inner__menu li {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-weight: 500;
+        word-break: break-all;
+        margin-bottom: 1.5rem; }
+        .footer__inner__menu li:last-child {
+          margin-bottom: 0; }
+      .footer__inner__menu a {
+        text-decoration: none;
+        color: inherit; }
+    .footer__inner__social {
+      display: flex;
+      flex-direction: column; }
+      .footer__inner__social ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1.5rem; }
+        .footer__inner__social ul li {
+          display: flex;
+          margin-right: 2rem;
+          margin-bottom: 2rem; }
+          .footer__inner__social ul li:last-child {
+            margin-right: 0; }
+        .footer__inner__social ul a {
+          display: flex;
+          text-decoration: none;
+          color: inherit; }
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -452,7 +508,8 @@ strong {
       display: flex;
       flex-direction: column;
       max-width: 27rem;
-      width: 100%; }
+      width: 100%;
+      height: inherit; }
       .members__wrap__block--img {
         max-width: 100%;
         height: 35.8rem;
@@ -505,15 +562,26 @@ strong {
     margin-top: 7rem; }
     .services__wrap__block {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       width: calc(25% - 3rem);
-      height: 26.2rem;
+      padding: 3rem 2rem;
       background: var(--color-white);
       box-shadow: 0px 0px 10px rgba(140, 140, 140, 0.15);
       border-radius: 5px;
       margin: 0 1.5rem;
       margin-bottom: 3rem;
       overflow: hidden; }
+      .services__wrap__block__top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem; }
+      .services__wrap__block img {
+        width: 50px;
+        height: 50px;
+        margin-right: 1.5rem; }
+      .services__wrap__block h3 {
+        max-width: 15rem;
+        width: 100%; }
 
 .offers {
   display: flex;
