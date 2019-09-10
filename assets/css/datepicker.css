@@ -48,8 +48,7 @@
   .datepicker--cell.-focus- {
     background: #f0f0f0; }
   .datepicker--cell.-current- {
-    background: #57BCF1;
-    color: #FEFEFE;
+    border: 1px solid #57BCF1;
     border-radius: 3px; }
     .datepicker--cell.-current-.-focus- {
       color: #4a4a4a; }
@@ -83,7 +82,7 @@
   .datepicker--cell.-selected- {
     color: #fff;
     border: none;
-    background: #5cc4ef; }
+    background: #57BCF1;; }
     .datepicker--cell.-selected-.-current- {
       color: #fff;
       background: #5cc4ef; }

@@ -1,3 +1,4 @@
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => anchor.addEventListener('click', smoothScroll));
 
 function smoothScroll(event) {
@@ -9,6 +10,11 @@ function smoothScroll(event) {
         behavior: "smooth"
     });
 }
+
+// Hero form dropdown
+document.querySelector('.form-dropdown').addEventListener('click', function() {
+    document.querySelector('.select-options').classList.add('active');
+})
 
 $('.datepicker-here').datepicker({
     autoClose: true,

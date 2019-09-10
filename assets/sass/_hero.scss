@@ -53,7 +53,6 @@
             justify-content: center;
             margin-right: 2rem;
             height: 8rem;
-            overflow: hidden;
             position: relative;
 
             &::after {
@@ -109,6 +108,45 @@
                 position: absolute;
                 top: -3px;
                 right: 0;
+            }
+
+            &-options {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: -20rem;
+                left: -2rem;
+                width: max-content;
+                background: var(--color-white);
+                box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+                border-radius: 6px;
+                padding: 1.25rem 0;
+                z-index: 5;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s ease;
+
+                &.active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                li {
+                    display: flex;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    font-weight: 600;
+                    color: var(--color-grey);
+                    background-color: transparent;
+                    padding: 1.25rem 2.5rem;
+                    transition: all .3s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: var(--color-secondary);
+                        color: var(--color-white);
+                    }
+                }
             }
         }
 
