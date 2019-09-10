@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Medical</title>
 
+    <link rel="stylesheet" href="./assets/css/datepicker.css">
     <link rel="stylesheet" href="./assets/css/swiper.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -43,7 +44,7 @@
                         </div>
                         <div class="hero__form__block u-large">
                             <label for="date">Date</label>
-                            <input type="datetime" name="date">
+                            <input type='text' class="datepicker-here" data-position='right center' data-language='en'/>
                         </div>
                         <div class="hero__form__block u-medium">
                             <label for="name">Your name</label>
@@ -429,6 +430,9 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/datepicker.min.js"></script>
+    <script src="./assets/js/datepicker.en.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main.js"></script>
