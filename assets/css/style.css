@@ -205,6 +205,8 @@ html {
       font-size: 50%; } }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   font-weight: normal;
@@ -290,7 +292,8 @@ strong {
   background: var(--color-white);
   display: flex;
   flex-direction: column;
-  z-index: 100; }
+  z-index: 100;
+  box-shadow: 0px 5px 25px rgba(68, 68, 68, 0.15); }
   .header + * {
     padding-top: 8rem; }
   .header__inner {
@@ -326,7 +329,8 @@ strong {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-primary-background); }
+  background-color: var(--color-primary-background);
+  margin-top: auto; }
   .footer__inner {
     display: flex;
     padding: 5rem 0; }
@@ -730,15 +734,20 @@ strong {
       width: 100%;
       height: inherit;
       position: relative; }
+      .blog__wrap__block a {
+        text-decoration: none; }
       .blog__wrap__block--img {
-        max-width: 100%;
-        height: 27rem;
-        object-fit: cover;
-        border-radius: 5px;
+        display: flex;
         margin-bottom: 1.5rem; }
+        .blog__wrap__block--img img {
+          max-width: 100%;
+          height: 27rem;
+          object-fit: cover;
+          border-radius: 5px; }
       .blog__wrap__block--title {
         color: var(--color-primary); }
       .blog__wrap__block--descr {
+        color: var(--color-black);
         margin-top: 1rem;
         margin-bottom: auto; }
       .blog__wrap__block--date {
@@ -816,6 +825,33 @@ strong {
     width: calc(100% - 30rem); }
     .contacts__map img {
       max-width: 100%; }
+
+.blog-page {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16rem;
+  padding-bottom: 18rem; }
+  .blog-page__inner {
+    display: flex;
+    flex-direction: column; }
+    .blog-page__inner--img {
+      max-width: 100%;
+      height: 45rem;
+      object-fit: contain;
+      border-radius: 5px;
+      margin-bottom: 5rem; }
+    .blog-page__inner--title {
+      color: var(--color-primary);
+      margin-bottom: 5px; }
+      .blog-page__inner--title::after {
+        content: unset; }
+    .blog-page__inner--date {
+      color: var(--color-grey);
+      margin-bottom: 3rem; }
+    .blog-page__inner--text,
+    .blog-page__inner p {
+      font-size: 1.8rem;
+      line-height: 2.8rem; }
 
 .u-margin-b-null {
   margin: 0; }
