@@ -1,7 +1,6 @@
 .hero {
     display: flex;
     flex-direction: column;
-    background-image: url(../../assets/images/hero-bg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,6 +10,15 @@
         flex-direction: column;
         padding-top: 9.5rem;
         padding-bottom: 17.5rem;
+
+        &--btn {
+            padding-top: 13.5rem;
+            padding-bottom: 21.5rem;
+
+            .hero__title {
+                color: var(--color-white);
+            }
+        }
     }
     
     &__title {
@@ -18,6 +26,8 @@
         line-height: 13.4rem;
         font-weight: 600;
         text-align: left;
+        max-width: 100rem;
+        width: 100%;
         margin-bottom: 10rem;
     }
 
@@ -52,7 +62,7 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                background-color: red;
+                background-color: var(--color-grey-light);
                 width: 2px;
                 height: 100%;
             }
@@ -88,19 +98,47 @@
             margin-bottom: 1.1rem;
         }
 
-        select {
-            height: 2rem;
+        .select {
+            display: flex;
+            max-width: 21rem;
+            width: 100%;
+            position: relative;
+
+            &::after {
+                content: url(../../assets/images/arrow-point-to-right.svg);
+                position: absolute;
+                top: -3px;
+                right: 0;
+            }
         }
 
-        input {
+        select {
+            font-size: 1.6rem;
+            line-height: 2rem;
+            font-weight: 500;
+            width: 100%;
+            height: 2rem;
+            border: none;
+        }
+
+        input[type=text],
+        input[type=tel] {
             font-size: 1.6rem;
             line-height: 2rem;
             font-weight: 500;
             border: none;
             background-color: transparent;
+            border-bottom: 1px solid var(--color-grey);
+            max-width: 14rem;
+            width: 100%;
+            transition: all .3s ease;
 
             &::placeholder {
                 color: var(--color-grey);
+            }
+
+            &:focus {
+                border-bottom: 1px solid var(--color-secondary);
             }
         }
 
@@ -111,6 +149,8 @@
             color: var(--color-white);
             background-color: var(--color-secondary);
             padding: 3.9rem 7.3rem;
+            border: none;
+            cursor: pointer;
         }
     }
 }
