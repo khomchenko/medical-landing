@@ -6,6 +6,7 @@
 
     &__inner {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         position: relative;
     }
@@ -16,16 +17,49 @@
         max-width: 30rem;
         width: 100%;
 
+        .heading-primary {
+            margin-bottom: 7rem;
+        }
+
+        &__tel,
+        &__email,
+        &__address {
+            text-decoration: none;
+            color: inherit;
+            padding-left: 4rem;
+            margin-bottom: 3rem;
+            position: relative;
+
+            &::before {
+                content: url(../../assets/images/telephone.svg);
+                position: absolute;
+                left: 0;
+                top: 3px;
+            }
+        }
+
         &__tel {
 
+            &::before {
+                content: url(../../assets/images/telephone.svg);
+            }
         }
 
         &__email {
 
+            &::before {
+                content: url(../../assets/images/gmail.svg);
+            }
         }
 
         &__address {
+            margin-bottom: 0;
 
+            &::before {
+                content: url(../../assets/images/location.svg);
+                left: -5px;
+                top: -5px;
+            }
         }
     }
 
