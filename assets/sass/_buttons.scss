@@ -37,4 +37,10 @@
             padding: 1.7rem 5rem;
         }
     }
+    
+    &-hamburger {
+        display: flex;
+        background-color: transparent;
+        border-radius: unset;
+    }
 }
