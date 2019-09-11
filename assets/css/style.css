@@ -277,12 +277,17 @@ strong {
       font-size: 1.2rem;
       line-height: 1.5rem;
       font-weight: 500;
-      color: var(--color-white);
       padding: .4rem 1rem;
       margin-left: auto; }
     .btn-primary-m {
       width: fit-content;
       padding: 1.4rem 5.5rem; }
+    .btn-primary-l {
+      width: fit-content;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      font-weight: 500;
+      padding: 1.7rem 5rem; }
 
 .header {
   position: fixed;
@@ -668,11 +673,14 @@ strong {
       border-radius: 5px;
       margin: 0 1.5rem;
       margin-bottom: 3rem;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
+      .services__wrap__block:hover .services__wrap__block__link {
+        opacity: 1;
+        visibility: visible; }
       .services__wrap__block__top {
         display: flex;
-        align-items: center;
-        margin-bottom: 1.5rem; }
+        align-items: center; }
       .services__wrap__block img {
         width: 50px;
         height: 50px;
@@ -680,6 +688,29 @@ strong {
       .services__wrap__block h3 {
         max-width: 15rem;
         width: 100%; }
+      .services__wrap__block p {
+        margin-top: 1.5rem; }
+      .services__wrap__block__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2.5rem;
+        background: rgba(76, 76, 76, 0.4);
+        backdrop-filter: blur(18px);
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease; }
+        .services__wrap__block__link h3 {
+          max-width: unset;
+          text-align: center;
+          margin-bottom: 3rem; }
 
 .offers {
   display: flex;

@@ -20,7 +20,6 @@
             font-size: 1.2rem;
             line-height: 1.5rem;
             font-weight: 500;
-            color: var(--color-white);
             padding: .4rem 1rem;
             margin-left: auto;
         }
@@ -28,6 +27,14 @@
         &-m {
             width: fit-content;
             padding: 1.4rem 5.5rem;
+        }
+
+        &-l {
+            width: fit-content;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+            padding: 1.7rem 5rem;
         }
     }
 }
