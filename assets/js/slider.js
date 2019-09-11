@@ -70,5 +70,12 @@ var blogSwiper = new Swiper ('.blog__wrap .swiper-container', {
     navigation: {
         nextEl: '.blog__wrap .swiper-button-next',
         prevEl: '.blog__wrap .swiper-button-prev',
+    },
+
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 15
+        }
     }
 });

@@ -347,7 +347,25 @@
         }
     }
 
+    // BLOG
+    .blog {
+        padding-top: 50px;
 
+        &__wrap {
+            margin-top: 40px;
+
+            &__block {
+                height: initial;
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+
+
+    }
 
     // ///////////////////////////////
 
@@ -358,9 +376,7 @@
 
 
 
-    .blog {
-        display: none;
-    }
+
 
     .contacts {
         display: none;
