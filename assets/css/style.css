@@ -494,6 +494,17 @@ strong {
           .hero__form .select-options li:hover {
             background-color: var(--color-secondary);
             color: var(--color-white); }
+      .hero__form .select-wrap {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+        z-index: 2;
+        display: none; }
+        .hero__form .select-wrap.active {
+          display: block; }
     .hero__form select {
       font-size: 1.6rem;
       line-height: 2rem;

@@ -11,11 +11,28 @@ function smoothScroll(event) {
     });
 }
 
-// Hero form dropdown
-document.querySelector('.form-dropdown').addEventListener('click', function() {
-    document.querySelector('.select-options').classList.add('active');
-})
+// Hero form dropdown select
+var $inputDropdown = document.querySelector('.input-dropdown');
+var $selectWrap = document.querySelector('.select-wrap');
+var $selectOptions = document.querySelector('.select-options');
 
+$inputDropdown.addEventListener('click', function(e) {
+    $selectOptions.classList.add('active');
+    $selectWrap.classList.add('active');
+});
+$selectWrap.addEventListener('click', function() {
+    $selectOptions.classList.remove('active');
+    this.classList.remove('active');
+});
+$selectOptions.querySelectorAll('li').forEach(function(item) {
+    item.addEventListener('click', function() {
+        $inputDropdown.value = this.textContent;
+        $selectOptions.classList.remove('active');
+        $selectWrap.classList.remove('active');
+    })
+});
+
+// Calendar
 $('.datepicker-here').datepicker({
     autoClose: true,
     minDate: new Date()
