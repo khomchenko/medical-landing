@@ -17,6 +17,11 @@
         height: 2rem;
         z-index: -1;
     }
+
+    @include respond(phone) {
+        font-size: 40px;
+        line-height: 50px;
+    }
 }
 
 .heading-secondary {
@@ -29,6 +34,12 @@
     font-size: 2rem;
     line-height: 3rem;
     font-weight: 600;
+
+    
+    @include respond(phone) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .paragraph-sm {

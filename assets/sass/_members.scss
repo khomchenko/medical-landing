@@ -29,6 +29,7 @@
             }
 
             &--position {
+                font-size: 1.6rem;
                 line-height: 2rem;
                 font-weight: 600;
                 color: var(--color-primary);
@@ -73,6 +74,10 @@
             &:hover {
                 background-image: url(../../assets/images/slider/slider-prev-btn-hover.svg);
             }
+        }
+
+        .swiper-pagination {
+            display: none;
         }
     }
 }

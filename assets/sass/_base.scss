@@ -63,6 +63,11 @@ body {
     background-color: var(--color-white);
     min-height: 100vh;
     position: relative;
+
+    @include respond(phone) {
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
 
 .container {
