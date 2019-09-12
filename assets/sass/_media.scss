@@ -350,6 +350,7 @@
     // BLOG
     .blog {
         padding-top: 50px;
+        padding-bottom: 50px;
 
         &__wrap {
             margin-top: 40px;
@@ -363,26 +364,54 @@
         .swiper-button-next {
             display: none;
         }
-
-
     }
 
-    // ///////////////////////////////
-
-
-
-
-
-
-
-
-
-
+    // CONTACTS
     .contacts {
-        display: none;
+        padding-top: 55px;
+        padding-bottom: 75px;
+
+        &__info {
+            max-width: unset;
+
+            .heading-primary {
+                margin-bottom: 40px;
+            }
+
+            &__tel,
+            &__email,
+            &__address {
+                padding-left: 40px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__map {
+            display: none;
+        }
     }
 
+    // FOOTER
     .footer {
-        display: none;
+
+        &__inner {
+            justify-content: center;
+            padding: 20px 0; 
+
+            &__logo {
+                font-size: 40px;
+                line-height: 49px;
+                max-width: 100%;
+                text-align: center;
+                margin-right: 0;
+                width: unset;
+            }
+
+            &__texts,
+            &__menu,
+            &__social {
+                display: none;
+            }
+        }
     }
 }
