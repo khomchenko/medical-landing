@@ -122,7 +122,33 @@
         &__col {
             width: 100%;
 
+            &:last-child {
+                display: none;
+            }
+
+            &--mobile {
+                display: block;
+                font-size: 14px;
+                line-height: 26px;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+
+            &--mobile-slider {
+                display: block;
+                position: relative;
+
+                .swiper-container {
+                    position: unset;
+                }
+
+                .swiper-pagination {
+                    bottom: -30px;
+                }
+            }
+
             &__wrap {
+                display: none;
                 margin-top: 40px;
 
                 &__block {
@@ -211,6 +237,7 @@
         padding-bottom: 90px;
 
         &__wrap {
+            display: none;
             margin-top: 40px;
 
             &__block {
@@ -356,7 +383,15 @@
             margin-top: 40px;
 
             &__block {
+                max-width: unset;
                 height: initial;
+
+                &--img {
+
+                    img {
+                        width: 100%;
+                    }
+                }
             }
         }
 
@@ -368,7 +403,7 @@
 
     // CONTACTS
     .contacts {
-        padding-top: 55px;
+        padding-top: 25px;
         padding-bottom: 75px;
 
         &__info {

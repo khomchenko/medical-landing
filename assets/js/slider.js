@@ -74,8 +74,25 @@ var blogSwiper = new Swiper ('.blog__wrap .swiper-container', {
 
     breakpoints: {
         600: {
-            slidesPerView: 2,
-            spaceBetween: 15
+            slidesPerView: 1,
+            spaceBetween: 0,
         }
     }
 });
+
+if (window.innerWidth < 600) {
+    var blogSwiper = new Swiper ('.about__col--mobile-slider .swiper-container', {
+        breakpoints: {
+            600: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+
+                pagination: {
+                    clickable: true,
+                    el: '.about__col--mobile-slider .swiper-pagination',
+                },
+            }
+        }
+    });
+}
+
