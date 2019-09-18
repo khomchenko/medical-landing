@@ -14,6 +14,10 @@
         flex-wrap: wrap;
         margin: 0 auto;
         margin-top: 7rem;
+
+        &--mobile-slider {
+            display: none;
+        }
         
         &__block {
             display: flex;

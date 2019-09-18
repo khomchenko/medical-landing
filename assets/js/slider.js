@@ -75,21 +75,42 @@ var blogSwiper = new Swiper ('.blog__wrap .swiper-container', {
     breakpoints: {
         600: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 10,
+
+            pagination: {
+                clickable: true,
+                el: '.blog__wrap .swiper-pagination',
+            },
         }
     }
 });
 
 if (window.innerWidth < 600) {
-    var blogSwiper = new Swiper ('.about__col--mobile-slider .swiper-container', {
+    var aboutMobileSwiper = new Swiper ('.about__col--mobile-slider .swiper-container', {
         breakpoints: {
             600: {
+                loop: true,
                 slidesPerView: 1,
-                spaceBetween: 0,
+                spaceBetween: 10,
 
                 pagination: {
                     clickable: true,
                     el: '.about__col--mobile-slider .swiper-pagination',
+                },
+            }
+        }
+    });
+
+    var servicesMobileSwiper = new Swiper ('.services__wrap--mobile-slider .swiper-container', {
+        breakpoints: {
+            600: {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 10,
+
+                pagination: {
+                    clickable: true,
+                    el: '.services__wrap--mobile-slider .swiper-pagination',
                 },
             }
         }

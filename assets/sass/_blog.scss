@@ -95,5 +95,9 @@
                 background-image: url(../../assets/images/slider/slider-prev-btn-hover.svg);
             }
         }
+
+        .swiper-pagination {
+            display: none;
+        }
     }
 }
