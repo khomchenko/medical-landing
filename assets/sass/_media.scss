@@ -97,7 +97,19 @@
                 max-width: unset;
 
                 &::after {
-                    top: 3px;
+                    top: -3px;
+                }
+
+                .select-options {
+                    top: -43px;
+                    left: -15px;
+                    width: calc(100% + 30px);
+                    height: unset;
+                    overflow-y: unset;
+
+                    li {
+                        padding: 7px 30px;
+                    }
                 }
             }
 

@@ -225,6 +225,9 @@ body {
   width: 100%;
   margin: 0 auto; }
 
+.datepicker--pointer {
+  display: none; }
+
 .heading-primary {
   font-size: 6rem;
   line-height: 7.3rem;
@@ -530,7 +533,7 @@ strong {
           padding: 1.25rem 2.5rem;
           transition: all .3s ease;
           cursor: pointer; }
-          .hero__form .select-options li:hover {
+          .hero__form .select-options li:hover, .hero__form .select-options li:focus {
             background-color: var(--color-secondary);
             color: var(--color-white); }
       .hero__form .select-wrap {
@@ -1099,7 +1102,15 @@ strong {
     .hero__form .select {
       max-width: unset; }
       .hero__form .select::after {
-        top: 3px; }
+        top: -3px; }
+      .hero__form .select .select-options {
+        top: -43px;
+        left: -15px;
+        width: calc(100% + 30px);
+        height: unset;
+        overflow-y: unset; }
+        .hero__form .select .select-options li {
+          padding: 7px 30px; }
     .hero__form label {
       font-size: 12px;
       line-height: 15px;

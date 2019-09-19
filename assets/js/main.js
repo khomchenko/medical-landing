@@ -53,6 +53,13 @@ $selectOptions.querySelectorAll('li').forEach(function(item) {
 });
 
 // Calendar
+if (window.innerWidth > 601) {
+    document.querySelector('.datepicker-here').setAttribute('data-position', 'right center');
+}
+if (window.innerWidth < 600) {
+    document.querySelector('.datepicker-here').setAttribute('data-position', 'bottom center');
+}
+
 $('.datepicker-here').datepicker({
     autoClose: true,
     minDate: new Date()

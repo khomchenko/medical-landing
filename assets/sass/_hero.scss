@@ -163,7 +163,8 @@
                     transition: all .3s ease;
                     cursor: pointer;
 
-                    &:hover {
+                    &:hover,
+                    &:focus {
                         background-color: var(--color-secondary);
                         color: var(--color-white);
                     }
