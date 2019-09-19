@@ -229,6 +229,11 @@
             }
         }
 
+        .swiper-slide  {
+            display: flex;
+            justify-content: center;
+        }
+
         .swiper-button-prev,
         .swiper-button-next {
             display: none;
@@ -367,6 +372,10 @@
             position: unset;
         }
 
+        .swiper-slide {
+            justify-content: center;
+        }
+
         .swiper-pagination {
             display: flex;
             justify-content: center;
@@ -402,6 +411,7 @@
             margin-top: 40px;
 
             &__block {
+                max-width: unset;
 
                 img {
                     height: 310px;
