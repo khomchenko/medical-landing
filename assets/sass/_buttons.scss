@@ -38,9 +38,14 @@
         }
     }
     
-    &-hamburger {
+    &-hamburger,
+    &-hamburger-close {
         display: flex;
         background-color: transparent;
         border-radius: unset;
+    }
+
+    &-hamburger-close {
+        display: none;
     }
 }

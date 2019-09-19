@@ -4,11 +4,22 @@
         padding: 0 15px;
     }
 
+    // NAV MOBILE
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
     // HEADER
     .header {
 
         & + * {
             padding-top: 64px;
+        }
+
+        &.active {
+            box-shadow: unset;
+            border-radius: unset;
         }
 
         &__inner {

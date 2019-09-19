@@ -11,12 +11,32 @@ function smoothScroll(event) {
     });
 }
 
+// Nav mobile menu
+var $header = document.querySelector('.header');
+var $hamburger = document.querySelector('.btn-hamburger');
+var $hamburgerClose = document.querySelector('.btn-hamburger-close');
+var $navMobile = document.querySelector('.nav-mobile');
+
+$hamburger.addEventListener('click', function() {
+    $navMobile.classList.toggle('active');
+    $header.classList.toggle('active');
+    $hamburger.style.display = "none";
+    $hamburgerClose.style.display = "flex";
+})
+
+$hamburgerClose.addEventListener('click', function() {
+    $navMobile.classList.toggle('active');
+    $header.classList.toggle('active');
+    $hamburger.style.display = "flex";
+    $hamburgerClose.style.display = "none";
+})
+
 // Hero form dropdown select
 var $inputDropdown = document.querySelector('.input-dropdown');
 var $selectWrap = document.querySelector('.select-wrap');
 var $selectOptions = document.querySelector('.select-options');
 
-$inputDropdown.addEventListener('click', function(e) {
+$inputDropdown.addEventListener('click', function() {
     $selectOptions.classList.add('active');
     $selectWrap.classList.add('active');
 });
