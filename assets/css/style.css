@@ -1359,4 +1359,19 @@ strong {
       margin-right: 0;
       width: unset; }
     .footer__inner__texts, .footer__inner__menu, .footer__inner__social {
-      display: none; } }
+      display: none; }
+  .blog-page {
+    margin-top: 30px;
+    padding-bottom: 60px; }
+    .blog-page__inner--img {
+      height: inherit;
+      margin-bottom: 30px; }
+    .blog-page__inner--title {
+      font-size: 20px;
+      line-height: 30px; }
+    .blog-page__inner--date {
+      font-size: 12px;
+      line-height: 14px; }
+    .blog-page__inner--text {
+      font-size: 16px;
+      line-height: 26px; } }
