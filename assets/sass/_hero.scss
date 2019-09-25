@@ -97,96 +97,6 @@
             margin-bottom: 1.1rem;
         }
 
-        .select {
-            display: flex;
-            max-width: 21rem;
-            width: 100%;
-            position: relative;
-
-            &::after {
-                content: url(../../assets/images/arrow-point-to-right.svg);
-                position: absolute;
-                top: -1px;
-                right: 0;
-                z-index: 1;
-            }
-
-            &-options {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: -20rem;
-                left: -2rem;
-                width: max-content;
-                background: var(--color-white);
-                box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
-                border-radius: 6px;
-                padding: 1.25rem 0;
-                z-index: 5;
-                opacity: 0;
-                height: 40rem;
-                overflow-y: scroll;
-                visibility: hidden;
-                transition: all .3s ease;
-
-                &::-webkit-scrollbar {
-                    width: 1.5rem;
-                }
-
-                &::-webkit-scrollbar-track {
-                    background: var(--color-grey-light);
-                    border-radius: 0 6px 6px 0;
-                }
-                
-                &::-webkit-scrollbar-thumb {
-                    background: var(--color-secondary);
-                    border-radius: 0 6px 6px 0;
-                }
-
-                &::-webkit-scrollbar-thumb:hover {
-                    background: var(--color-primary);
-                }
-
-                &.active {
-                    opacity: 1;
-                    visibility: visible;
-                }
-
-                li {
-                    display: flex;
-                    font-size: 2rem;
-                    line-height: 3rem;
-                    font-weight: 600;
-                    color: var(--color-grey);
-                    background-color: transparent;
-                    padding: 1.25rem 2.5rem;
-                    transition: all .3s ease;
-                    cursor: pointer;
-
-                    &:hover,
-                    &:focus {
-                        background-color: var(--color-secondary);
-                        color: var(--color-white);
-                    }
-                }
-            }
-
-            &-wrap {
-                position: fixed;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background-color: transparent;
-                z-index: 2;
-                display: none;
-                
-                &.active {
-                    display: block;
-                }
-            }
-        }
-
         select {
             font-size: 1.6rem;
             line-height: 2rem;
@@ -236,4 +146,30 @@
             cursor: pointer;
         }
     }
+}
+
+.selectize-control.single {
+
+    .selectize-input {
+        width: calc(100% - 20px);
+        border: none;
+        box-shadow: unset;
+        padding: 8px 0;
+
+        &::after {
+            right: 0;
+        }
+
+        & > *,
+        input {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            font-weight: 500;
+            color: var(--color-black);
+        }
+    }
+}
+
+.selectize-dropdown {
+    border-top: 1px solid #d0d0d0;
 }

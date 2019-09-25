@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Medical</title>
 
+    <link rel="stylesheet" href="./assets/css/selectize.css">
     <link rel="stylesheet" href="./assets/css/datepicker.css">
     <link rel="stylesheet" href="./assets/css/swiper.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -47,7 +48,13 @@
                 <a href="/" class="header__inner__logo">Medical</a>
                 <ul class="header__inner__nav">
                     <li><a href="/#home">Home</a></li>
-                    <li><a href="/#services">Services</a></li>
+                    <li>
+                        <a href="/#services">Services</a>
+                        <ul class="header__inner__nav--sub-menu">
+                            <li><a href="./services-blocks.html">Services 1</a></li>
+                            <li><a href="./services-blocks.html">Services 2</a></li>
+                        </ul>
+                    </li>
                     <li><a href="/#members">Our doctors</a></li>
                     <li><a href="/#offers">Price</a></li>
                     <li><a href="/#about">About us</a></li>
@@ -73,24 +80,20 @@
                     <div class="hero__form__wrap">
                         <div class="hero__form__block u-large">
                             <label for="type">Doctor</label>
-                            <div class="select">
-                                <input type="text" placeholder="Сhoose a doctor" class="input-dropdown" readonly>
-                                <ul class="select-options">
-                                    <li>Surgery department</li>
-                                    <li>Dental department</li>
-                                    <li>Ultrasound procedure</li>
-                                    <li>Сardiology</li>
-                                    <li>Urology</li>
-                                    <li>Gynecology</li>
-                                    <li>Diagnostics</li>
-                                    <li>Endocrinology</li>
-                                    <li>Lab tests</li>
-                                    <li>Physiotherapy</li>
-                                    <li>Proctology</li>
-                                    <li>Dermatology </li>
-                                </ul>
-                                <div class="select-wrap">&nbsp;</div>
-                            </div>
+                            <select id="select-custom" class="demo-default select-custom" placeholder="Select a doctor...">
+                                <option value="">Select a doctor...</option>
+                                <option value="1">Surgery department</option>
+                                <option value="2">Ultrasound procedure</option>
+                                <option value="3">Сardiology</option>
+                                <option value="4">Urology</option>
+                                <option value="5">Gynecology</option>
+                                <option value="6">Diagnostics</option>
+                                <option value="7">Endocrinology</option>
+                                <option value="8">Lab tests</option>
+                                <option value="9">Physiotherapy</option>
+                                <option value="10">Proctology</option>
+                                <option value="11">Dermatology</option>
+                            </select>
                         </div>
                         <div class="hero__form__block u-large">
                             <label for="date">Date</label>
@@ -664,6 +667,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/selectize.min.js"></script>
     <script src="./assets/js/datepicker.min.js"></script>
     <script src="./assets/js/datepicker.en.js"></script>
     <script src="./assets/js/swiper.min.js"></script>

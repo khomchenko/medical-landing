@@ -31,27 +31,6 @@ $hamburgerClose.addEventListener('click', function() {
     $hamburgerClose.style.display = "none";
 })
 
-// Hero form dropdown select
-var $inputDropdown = document.querySelector('.input-dropdown');
-var $selectWrap = document.querySelector('.select-wrap');
-var $selectOptions = document.querySelector('.select-options');
-
-$inputDropdown.addEventListener('click', function() {
-    $selectOptions.classList.add('active');
-    $selectWrap.classList.add('active');
-});
-$selectWrap.addEventListener('click', function() {
-    $selectOptions.classList.remove('active');
-    this.classList.remove('active');
-});
-$selectOptions.querySelectorAll('li').forEach(function(item) {
-    item.addEventListener('click', function() {
-        $inputDropdown.value = this.textContent;
-        $selectOptions.classList.remove('active');
-        $selectWrap.classList.remove('active');
-    })
-});
-
 // Calendar
 if (window.innerWidth > 601) {
     document.querySelector('.datepicker-here').setAttribute('data-position', 'right center');
@@ -64,3 +43,13 @@ $('.datepicker-here').datepicker({
     autoClose: true,
     minDate: new Date()
 })
+
+// Select
+$('#select-custom').selectize({
+    create: true,
+    sortField: {
+        field: 'text',
+        direction: 'asc'
+    },
+    dropdownParent: 'body'
+});
