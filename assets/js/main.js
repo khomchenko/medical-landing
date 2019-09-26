@@ -61,3 +61,6 @@ $('#select-custom').selectize({
     },
     dropdownParent: 'body'
 });
+
+// Animation
+new WOW().init();
