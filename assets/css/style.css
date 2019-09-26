@@ -224,6 +224,9 @@ body {
   max-width: 117rem;
   width: 100%;
   margin: 0 auto; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      padding: 0 2rem; } }
 
 .datepicker--pointer {
   display: none; }
@@ -303,12 +306,10 @@ strong {
       line-height: 1.5rem;
       font-weight: 500;
       padding: 1.7rem 5rem; }
-  .btn-hamburger, .btn-hamburger-close {
+  .btn-hamburger {
     display: flex;
     background-color: transparent;
     border-radius: unset; }
-  .btn-hamburger-close {
-    display: none; }
 
 .header {
   position: fixed;
@@ -373,7 +374,7 @@ strong {
           padding: 0;
           margin-right: 0;
           margin-bottom: 1rem;
-          color: var(--color-secondary); }
+          color: var(--color-black); }
           .header__inner__nav--sub-menu li:last-child {
             margin-bottom: 0; }
     .header__inner__mobile {
@@ -547,19 +548,21 @@ strong {
       border-radius: 5px;
       cursor: pointer; }
 
-.selectize-control.single .selectize-input {
-  width: calc(100% - 20px);
-  border: none;
-  box-shadow: unset;
-  padding: 8px 0; }
-  .selectize-control.single .selectize-input::after {
-    right: 0; }
-  .selectize-control.single .selectize-input > *,
-  .selectize-control.single .selectize-input input {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    font-weight: 500;
-    color: var(--color-black); }
+.selectize-control {
+  height: 40px; }
+  .selectize-control.single .selectize-input {
+    width: calc(100% - 20px);
+    border: none;
+    box-shadow: unset;
+    padding: 8px 0; }
+    .selectize-control.single .selectize-input::after {
+      right: 0; }
+    .selectize-control.single .selectize-input > *,
+    .selectize-control.single .selectize-input input {
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+      font-weight: 500;
+      color: var(--color-black); }
 
 .selectize-dropdown {
   border-top: 1px solid #d0d0d0; }
@@ -986,6 +989,7 @@ strong {
     margin-bottom: 30px; }
     .nav-mobile__list li {
       display: flex;
+      flex-direction: column;
       font-size: 26px;
       line-height: 32px;
       font-weight: 500;
@@ -996,6 +1000,13 @@ strong {
       display: flex;
       text-decoration: none;
       color: inherit; }
+    .nav-mobile__list--sub-menu {
+      display: none;
+      padding-left: 15px;
+      margin-top: 15px; }
+      .nav-mobile__list--sub-menu.active {
+        display: flex;
+        flex-direction: column; }
   .nav-mobile__social {
     display: flex;
     margin-bottom: 30px; }
@@ -1024,7 +1035,7 @@ strong {
 .u-margin-b-null {
   margin-bottom: 0; }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .container {
     padding: 0 15px; }
   .nav-mobile {

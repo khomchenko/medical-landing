@@ -27,6 +27,7 @@
 
         li {
             display: flex;
+            flex-direction: column;
             font-size: 26px;
             line-height: 32px;
             font-weight: 500;
@@ -41,6 +42,17 @@
             display: flex;
             text-decoration: none;
             color: inherit;
+        }
+
+        &--sub-menu {
+            display: none;
+            padding-left: 15px;
+            margin-top: 15px;
+
+            &.active {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 

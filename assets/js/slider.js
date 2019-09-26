@@ -14,9 +14,12 @@ var membersSwiper = new Swiper ('.members__wrap .swiper-container', {
     },
 
     breakpoints: {
-        600: {
-            slidesPerView: 2,
+        900: {
+            slidesPerView: 3,
             spaceBetween: 10
+        },
+        600: {
+            slidesPerView: 2
         }
     }
 });
@@ -31,8 +34,12 @@ var offersSwiper = new Swiper ('.offers__wrap .swiper-container', {
     },
 
     breakpoints: {
-        600: {
+        900: {
             loop: true,
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        600: {
             slidesPerView: 1,
             spaceBetween: 0
         }
@@ -73,22 +80,25 @@ var blogSwiper = new Swiper ('.blog__wrap .swiper-container', {
     },
 
     breakpoints: {
-        600: {
-            slidesPerView: 1,
+        900: {
+            slidesPerView: 2,
             spaceBetween: 10,
 
             pagination: {
                 clickable: true,
                 el: '.blog__wrap .swiper-pagination',
             },
+        },
+        600: {
+            slidesPerView: 1
         }
     }
 });
 
-if (window.innerWidth < 600) {
+if (window.innerWidth < 900) {
     var aboutMobileSwiper = new Swiper ('.about__col--mobile-slider .swiper-container', {
         breakpoints: {
-            600: {
+            900: {
                 loop: true,
                 slidesPerView: 1,
                 spaceBetween: 10,
@@ -103,7 +113,7 @@ if (window.innerWidth < 600) {
 
     var servicesMobileSwiper = new Swiper ('.services__wrap--mobile-slider .swiper-container', {
         breakpoints: {
-            600: {
+            900: {
                 loop: true,
                 slidesPerView: 1,
                 spaceBetween: 10,

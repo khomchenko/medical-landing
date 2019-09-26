@@ -12,84 +12,77 @@
 </head>
 <body>
 
-    <section class="services" id="services">
+    <nav class="nav-mobile">
+        <ul class="nav-mobile__list">
+            <li><a href="/#home">Home</a></li>
+            <li class="dropdown">
+                <a href="/#services">Services</a>
+                <ul class="nav-mobile__list--sub-menu">
+                    <li><a href="/#services">Services 1</a></li>
+                    <li><a href="./services-blocks-1.html">Services 2</a></li>
+                    <li><a href="./services-blocks-2.html">Services 3</a></li>
+                </ul>
+            </li>
+            <li><a href="/#members">Our doctors</a></li>
+            <li><a href="/#offers">Price</a></li>
+            <li><a href="/#about">About us</a></li>
+            <li><a href="/#contacts">Contacts</a></li>
+        </ul>
+        <ul class="nav-mobile__social">
+            <li>
+                <a href="#">
+                    <img src="./assets/images/nav/twitter.svg" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./assets/images/nav/facebook.svg" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./assets/images/nav/instagram.svg" alt="Instagram">
+                </a>
+            </li>
+        </ul>
+        <a href="tel:+380660000000" class="nav-mobile--phone">+38 (066) 000-00-00</a>
+    </nav>
+    
+    <header class="header">
         <div class="container">
-            <div class="services__inner">
-                <h2 class="heading-primary">Services of our clinic</h2>
-                <div class="services__wrap">
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/scissor.svg" alt="Surgery">
-                            <h3 class="heading-tertiary">Surgery department</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/premolar.svg" alt="Dental">
-                            <h3 class="heading-tertiary">Dental department</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/ultrasound.svg" alt="Ultrasound">
-                            <h3 class="heading-tertiary">Ultrasound procedure</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/cardiogram.svg" alt="Сardiology">
-                            <h3 class="heading-tertiary">Сardiology</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/kidney.svg" alt="Urology">
-                            <h3 class="heading-tertiary">Urology</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/female.svg" alt="Gynecology">
-                            <h3 class="heading-tertiary">Gynecology</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/computer-diag.svg" alt="Diagnostics">
-                            <h3 class="heading-tertiary">Diagnostics</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/thyroid-gland.svg" alt="Endocrinology">
-                            <h3 class="heading-tertiary">Endocrinology</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/test.svg" alt="Tests">
-                            <h3 class="heading-tertiary">Lab tests</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/massage.svg" alt="Physiotherapy">
-                            <h3 class="heading-tertiary">Physiotherapy</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/doctor.svg" alt="Proctology">
-                            <h3 class="heading-tertiary">Proctology</h3>
-                        </div>
-                    </div>
-                    <div class="services__wrap__block">
-                        <div class="services__wrap__block__top">
-                            <img src="./assets/images/services/urticaria.svg" alt="Dermatology">
-                            <h3 class="heading-tertiary">Dermatology</h3>
-                        </div>
-                    </div>
+            <div class="header__inner">
+                <a href="/" class="header__inner__logo">Medical</a>
+                <ul class="header__inner__nav">
+                    <li><a href="/#home">Home</a></li>
+                    <li>
+                        <a href="/#services">Services</a>
+                        <ul class="header__inner__nav--sub-menu">
+                            <li><a href="./services-blocks-1.html">Services 1</a></li>
+                            <li><a href="./services-blocks-2.html">Services 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/#members">Our doctors</a></li>
+                    <li><a href="/#offers">Price</a></li>
+                    <li><a href="/#about">About us</a></li>
+                    <li><a href="/#contacts">Contacts</a></li>
+                </ul>
+                <div class="header__inner__mobile">
+                    <button class="btn btn-hamburger">
+                        <img src="./assets/images/hamburger.svg" alt="Hamburger">
+                    </button>
+                    <button class="btn btn-hamburger-close">
+                        <img src="./assets/images/hamburger-close.svg" alt="Hamburger Close">
+                    </button>
                 </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: url(../../assets/images/hero-bg-1.png);">
+        <div class="container">
+            <div class="hero__inner hero__inner--btn">
+                <h1 class="hero__title">Trust your health to professionals</h1>
+                <a href="#" class="btn btn-primary-m">Sign up</a>
             </div>
         </div>
     </section>
@@ -235,6 +228,44 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="footer__inner__logo">Medical</a>
+                <div class="footer__inner__texts">
+                    <p>The leading multidisciplinary private clinic in Europe, with successful experience in world medicine for the provision of professional medical care to adults and children.</p>
+                </div>
+                <ul class="footer__inner__menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#members">Our doctors</a></li>
+                    <li><a href="#offers">Price</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+                <div class="footer__inner__social">
+                    <h2 class="heading-secondary">Follow Us</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/images/twitter.svg" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/images/facebook.svg" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/images/instagram.svg" alt="Insta">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/js/datepicker.min.js"></script>

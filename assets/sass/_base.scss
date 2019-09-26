@@ -74,6 +74,10 @@ body {
     max-width: 117rem;
     width: 100%;
     margin: 0 auto;
+
+    @include respond(tab-land) {
+        padding: 0 2rem;
+    }
 }
 
 .datepicker--pointer {
