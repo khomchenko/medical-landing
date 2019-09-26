@@ -1,3 +1,4 @@
+/* === Fonts === */
 @font-face {
   font-family: 'Montserrat';
   src: url("../../assets/fonts/Montserrat-Light.eot");
@@ -124,6 +125,7 @@
   font-weight: 100;
   font-style: italic; }
 
+/* === Reset === */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -174,6 +176,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* === Base === */
 :root {
   --color-primary: #2F80ED;
   --color-primary-background: #EAF4F9;
@@ -231,6 +234,7 @@ body {
 .datepicker--pointer {
   display: none; }
 
+/* === Typography === */
 .heading-primary {
   font-size: 6rem;
   line-height: 7.3rem;
@@ -275,6 +279,7 @@ body {
 strong {
   font-weight: 600; }
 
+/* === Buttons === */
 .btn {
   display: inline-block;
   font-size: 1.8rem;
@@ -311,6 +316,7 @@ strong {
     background-color: transparent;
     border-radius: unset; }
 
+/* === Header === */
 .header {
   position: fixed;
   top: 0;
@@ -380,6 +386,7 @@ strong {
     .header__inner__mobile {
       display: none; }
 
+/* === Footer === */
 .footer {
   display: flex;
   flex-direction: column;
@@ -437,6 +444,7 @@ strong {
           text-decoration: none;
           color: inherit; }
 
+/* === Hero === */
 .hero {
   display: flex;
   flex-direction: column;
@@ -567,6 +575,7 @@ strong {
 .selectize-dropdown {
   border-top: 1px solid #d0d0d0; }
 
+/* === About === */
 .about {
   display: flex;
   flex-direction: column;
@@ -606,6 +615,7 @@ strong {
     .about__col strong {
       text-transform: uppercase; }
 
+/* === Members === */
 .members {
   display: flex;
   flex-direction: column;
@@ -663,6 +673,7 @@ strong {
     .members__wrap .swiper-pagination {
       display: none; }
 
+/* === Services === */
 .services {
   display: flex;
   flex-direction: column;
@@ -676,6 +687,14 @@ strong {
     flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 7rem; }
+    @media only screen and (max-width: 56.25em) {
+      .services__wrap.is-active {
+        display: flex; }
+        .services__wrap.is-active .services__wrap__block {
+          width: calc(50% - 20px); } }
+    @media only screen and (max-width: 37.5em) {
+      .services__wrap.is-active .services__wrap__block {
+        width: 100%; } }
     .services__wrap--mobile-slider {
       display: none; }
     .services__wrap__block {
@@ -727,6 +746,7 @@ strong {
           text-align: center;
           margin-bottom: 3rem; }
 
+/* === Offers === */
 .offers {
   display: flex;
   flex-direction: column;
@@ -776,6 +796,7 @@ strong {
     .offers__wrap .swiper-pagination {
       display: none; }
 
+/* === Gallery === */
 .gallery {
   display: flex;
   flex-direction: column;
@@ -825,6 +846,7 @@ strong {
     .gallery__wrap .swiper-pagination {
       display: none; }
 
+/* === Blog === */
 .blog {
   display: flex;
   flex-direction: column;
@@ -892,6 +914,7 @@ strong {
     .blog__wrap .swiper-pagination {
       display: none; }
 
+/* === Contacts === */
 .contacts {
   display: flex;
   flex-direction: column;
@@ -937,6 +960,7 @@ strong {
     .contacts__map img {
       max-width: 100%; }
 
+/* === Blog page === */
 .blog-page {
   display: flex;
   flex-direction: column;
@@ -964,6 +988,7 @@ strong {
       font-size: 1.8rem;
       line-height: 2.8rem; }
 
+/* === Navigation mobile === */
 .nav-mobile {
   display: none;
   position: fixed;
@@ -1032,9 +1057,11 @@ strong {
       top: 4px;
       left: 0; }
 
+/* === Utilities === */
 .u-margin-b-null {
   margin-bottom: 0; }
 
+/* === Media === */
 @media only screen and (max-width: 56.25em) {
   .container {
     padding: 0 15px; }

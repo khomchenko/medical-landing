@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Medical</title>
 
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/hamburgers.css">
+    <link rel="stylesheet" href="./assets/css/selectize.css">
     <link rel="stylesheet" href="./assets/css/datepicker.css">
     <link rel="stylesheet" href="./assets/css/swiper.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -80,11 +83,55 @@
         </div>
     </header>
 
+    <!-- BEGIN HERO -->
+    <section class="hero" style="background-image: url(../../assets/images/hero-bg.png);" id="home">
+        <div class="container">
+            <div class="hero__inner">
+                <h1 class="hero__title">Trust your health to professionals</h1>
+                <form class="hero__form" action="#">
+                    <div class="hero__form__wrap">
+                        <div class="hero__form__block u-large">
+                            <label for="type">Doctor</label>
+                            <select id="select-custom" class="demo-default select-custom" placeholder="Select a doctor...">
+                                <option value="">Select a doctor...</option>
+                                <option value="1">Surgery department</option>
+                                <option value="2">Ultrasound procedure</option>
+                                <option value="3">Сardiology</option>
+                                <option value="4">Urology</option>
+                                <option value="5">Gynecology</option>
+                                <option value="6">Diagnostics</option>
+                                <option value="7">Endocrinology</option>
+                                <option value="8">Lab tests</option>
+                                <option value="9">Physiotherapy</option>
+                                <option value="10">Proctology</option>
+                                <option value="11">Dermatology</option>
+                            </select>
+                        </div>
+                        <div class="hero__form__block u-large">
+                            <label for="date">Date</label>
+                            <input type='text' class="datepicker-here" data-language='en'/>
+                        </div>
+                        <div class="hero__form__block u-medium">
+                            <label for="name">Your name</label>
+                            <input type="text" name="name" placeholder="Enter your name">
+                        </div>
+                        <div class="hero__form__block u-small">
+                            <label for="phone">Your phone</label>
+                            <input type="tel" name="phone">
+                        </div>
+                    </div>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- END HERO -->
+
     <section class="services" id="services">
         <div class="container">
             <div class="services__inner">
                 <h2 class="heading-primary">Services of our clinic</h2>
-                <div class="services__wrap">
+                <div class="services__wrap is-active">
                     <div class="services__wrap__block">
                         <div class="services__wrap__block__top">
                             <img src="./assets/images/services/scissor.svg" alt="Surgery">
