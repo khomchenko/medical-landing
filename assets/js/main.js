@@ -1,3 +1,38 @@
+// Popup
+document.querySelectorAll('.popup-opener')
+.forEach(btn => {
+    btn.addEventListener('click', function() {
+        
+        var $popup = document.querySelector('#' + btn.dataset.popup);
+
+        $popup.hidden = false;
+    })
+});
+
+document.querySelectorAll('.popup-wrapper')
+.forEach($wrap => {
+    $wrap.addEventListener('click', () => {
+        $wrap.hidden = true;
+    });
+
+    var $popup = $wrap.querySelector('#popup');
+    
+    $popup.addEventListener('click', e => {
+        e.stopPropagation();
+    });
+
+    var $close = $popup
+        .querySelector('.close');
+
+    if (!$close) {
+        return;
+    }
+
+    $close.addEventListener('click', e => {
+        $close.closest('.popup-wrapper').hidden = true;
+    })
+});
+
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => anchor.addEventListener('click', smoothScroll));
 
@@ -40,11 +75,13 @@ if (document.querySelector('.header__inner__nav .dropdown').querySelector('a').n
 }
 
 // Calendar
-if (window.innerWidth > 901) {
-    document.querySelector('.datepicker-here').setAttribute('data-position', 'right center');
-}
-if (window.innerWidth < 900) {
-    document.querySelector('.datepicker-here').setAttribute('data-position', 'bottom center');
+if (document.querySelector('.datepicker-here') !== null) {
+    if (window.innerWidth > 901) {
+        document.querySelector('.datepicker-here').setAttribute('data-position', 'right center');
+    }
+    if (window.innerWidth < 900) {
+        document.querySelector('.datepicker-here').setAttribute('data-position', 'bottom center');
+    }
 }
 
 $('.datepicker-here').datepicker({

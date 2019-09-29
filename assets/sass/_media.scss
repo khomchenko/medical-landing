@@ -14,7 +14,7 @@
     .header {
 
         & + * {
-            padding-top: 64px;
+            padding-top: 74px;
         }
 
         &.active {
@@ -45,6 +45,15 @@
 
         &__inner {
             padding: 42px 0;
+
+            &.hero__inner--text {
+                .hero__title {
+                    display: block;
+                    font-size: 8rem;
+                    line-height: normal;
+                    margin-bottom: 5rem;
+                }
+            }
         }
 
         &__title {

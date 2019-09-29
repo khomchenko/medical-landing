@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Medical</title>
 
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/hamburgers.css">
+    <link rel="stylesheet" href="./assets/css/selectize.css">
+    <link rel="stylesheet" href="./assets/css/datepicker.css">
     <link rel="stylesheet" href="./assets/css/swiper.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
+    <!-- BEGIN NAVIGATION MOBILE -->
     <nav class="nav-mobile">
         <ul class="nav-mobile__list">
             <li><a href="/#home">Home</a></li>
@@ -46,7 +53,9 @@
         </ul>
         <a href="tel:+380660000000" class="nav-mobile--phone">+38 (066) 000-00-00</a>
     </nav>
+    <!-- END NAVIGATION MOBILE -->
     
+    <!-- BEGIN HEADER -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -78,16 +87,87 @@
             </div>
         </div>
     </header>
+    <!-- END HEADER -->
 
-    <section class="hero" style="background-image: url(../../assets/images/hero-bg-1.png);">
+    <!-- BEGIN SECOND TYPE HERO -->
+    <section class="hero" style="background-image: url(./assets/images/hero-bg-1.png);">
         <div class="container">
-            <div class="hero__inner hero__inner--btn">
+            <div class="hero__inner hero__inner--btn hero__inner--text">
                 <h1 class="hero__title">Trust your health to professionals</h1>
-                <a href="#" class="btn btn-primary-m">Sign up</a>
+                <a href="#" class="btn btn-primary-m popup-opener" data-popup="started">Sign up</a>
             </div>
         </div>
     </section>
+    <!-- BEGIN SECOND TYPE HERO -->
 
+    <!-- BEGIN FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="footer__inner__logo">Medical</a>
+                <div class="footer__inner__texts">
+                    <p>The leading multidisciplinary private clinic in Europe, with successful experience in world medicine for the provision of professional medical care to adults and children.</p>
+                </div>
+                <ul class="footer__inner__menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#members">Our doctors</a></li>
+                    <li><a href="#offers">Price</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+                <div class="footer__inner__social">
+                    <h2 class="heading-secondary">Follow Us</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/images/twitter.svg" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/images/facebook.svg" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/images/instagram.svg" alt="Insta">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- BEGIN POPUP STARTED -->
+    <div class="popup-wrapper" id="started" hidden>
+        <div class="popup" id="popup">
+            <button class="close">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.8226 0.177473C14.586 -0.0591577 14.2023 -0.0591577 13.9657 0.177473L0.177836 13.9656C-0.0587903 14.2022 -0.0587903 14.5859 0.177836 14.8225C0.296134 14.9409 0.451229 15 0.606294 15C0.761359 15 0.916424 14.9409 1.03475 14.8225L14.8226 1.03435C15.0592 0.797747 15.0592 0.414104 14.8226 0.177473Z" fill="#2C2C2C"/>
+                    <path d="M14.8222 13.9656L1.03433 0.177473C0.79773 -0.0591577 0.414066 -0.0591577 0.177469 0.177473C-0.0591565 0.414075 -0.0591565 0.797717 0.177469 1.03435L13.9654 14.8225C14.0836 14.9408 14.2387 15 14.3938 15C14.5489 15 14.704 14.9408 14.8222 14.8225C15.0588 14.5859 15.0588 14.2022 14.8222 13.9656Z" fill="#2C2C2C"/>
+                </svg>                            
+            </button>
+            <div class="popup-content">
+                <h4 class="title">Contact form</h4>
+                <p class="paragraph">Thank you for choosing us. Our operator will contact you shortly</p>
+                <form action="#">
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                    <input type="text" name="lastname" id="lastname" placeholder="Your lastname">
+                    <input type="tel" name="phone" id="phone" placeholder="Your number phone">
+                    <button type="submit">Get started</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END POPUP STARTED -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/selectize.min.js"></script>
+    <script src="./assets/js/datepicker.min.js"></script>
+    <script src="./assets/js/datepicker.en.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main.js"></script>
