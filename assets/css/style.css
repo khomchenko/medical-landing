@@ -956,9 +956,11 @@ strong {
   .contacts__map {
     display: flex;
     justify-content: flex-end;
-    width: calc(100% - 30rem); }
-    .contacts__map img {
-      max-width: 100%; }
+    width: calc(100% - 30rem);
+    height: 53rem; }
+    .contacts__map img,
+    .contacts__map iframe {
+      width: 100%; }
 
 /* === Blog page === */
 .blog-page {
