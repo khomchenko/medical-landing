@@ -234,6 +234,11 @@ body {
 .datepicker--pointer {
   display: none; }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
 /* === Typography === */
 .heading-primary {
   font-size: 6rem;
@@ -523,7 +528,8 @@ strong {
       height: 2rem;
       border: none; }
     .hero__form input[type=text],
-    .hero__form input[type=tel] {
+    .hero__form input[type=tel],
+    .hero__form input[type=number] {
       font-size: 1.6rem;
       line-height: 2rem;
       font-weight: 500;
@@ -534,13 +540,16 @@ strong {
       width: 100%;
       transition: all .3s ease; }
       .hero__form input[type=text]::placeholder,
-      .hero__form input[type=tel]::placeholder {
+      .hero__form input[type=tel]::placeholder,
+      .hero__form input[type=number]::placeholder {
         color: var(--color-grey); }
       .hero__form input[type=text]:focus,
-      .hero__form input[type=tel]:focus {
+      .hero__form input[type=tel]:focus,
+      .hero__form input[type=number]:focus {
         border-bottom: 1px solid var(--color-secondary); }
       .hero__form input[type=text].input-dropdown,
-      .hero__form input[type=tel].input-dropdown {
+      .hero__form input[type=tel].input-dropdown,
+      .hero__form input[type=number].input-dropdown {
         max-width: unset;
         border: none;
         z-index: 2;
@@ -1108,7 +1117,17 @@ strong {
       .popup-wrapper .popup-content .paragraph {
         font-size: 1.6rem;
         line-height: 2.6rem;
-        margin-bottom: 3rem; }
+        margin-bottom: 1rem; }
+      .popup-wrapper .popup-content .data-primary,
+      .popup-wrapper .popup-content .data-secondary,
+      .popup-wrapper .popup-content .data-tertiary {
+        display: none; }
+        .popup-wrapper .popup-content .data-primary.active,
+        .popup-wrapper .popup-content .data-secondary.active,
+        .popup-wrapper .popup-content .data-tertiary.active {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 2rem; }
       .popup-wrapper .popup-content form {
         display: flex;
         flex-direction: column; }
@@ -1481,3 +1500,7 @@ strong {
     .blog-page__inner--text {
       font-size: 16px;
       line-height: 26px; } }
+
+@media only screen and (max-width: 37.5em) {
+  .hero__inner.hero__inner--text .hero__title {
+    font-size: 5rem; } }

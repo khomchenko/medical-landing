@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+
     <!-- BEGIN NAVIGATION MOBILE -->
     <nav class="nav-mobile">
         <ul class="nav-mobile__list">
@@ -99,18 +99,49 @@
     </header>
     <!-- END HEADER -->
 
-    <!-- BEGIN BLOG PAGE -->
-    <section class="blog-page">
+    <!-- BEGIN HERO -->
+    <section class="hero" style="background-image: url(./assets/images/hero-bg.png);" id="home">
         <div class="container">
-            <div class="blog-page__inner">
-                <img src="./assets/images/blog/blog-img.png" alt="Blog Image" class="blog-page__inner--img">
-                <h2 class="heading-primary blog-page__inner--title">Why do we need genetic tests? Why do we need genetic tests?</h2>
-                <span class="blog-page__inner--date">05.09.2019</span>
-                <p class="blog-page__inner--text">Genetic ancestry testing, or genetic genealogy, is a way for people interested in family history (genealogy) to go beyond what they can learn from relatives or from historical documentation. Examination of DNA variations can provide clues about where a person's ancestors might have come from and about relationships between families. Certain patterns of genetic variation are often shared among people of particular backgrounds. The more closely related two individuals, families, or populations are, the more patterns of variation they typically share. Three types of genetic ancestry testing are commonly used for genealogy</p>
+            <div class="hero__inner">
+                <h1 class="hero__title">Trust your health to professionals</h1>
+                <form class="hero__form" action="#">
+                    <div class="hero__form__wrap">
+                        <div class="hero__form__block u-large">
+                            <label for="type">Doctor</label>
+                            <select id="select-custom" class="demo-default select-custom" placeholder="Select a doctor..." required>
+                                <option value="">Select a doctor...</option>
+                                <option value="1">Surgery department</option>
+                                <option value="2">Ultrasound procedure</option>
+                                <option value="3">Сardiology</option>
+                                <option value="4">Urology</option>
+                                <option value="5">Gynecology</option>
+                                <option value="6">Diagnostics</option>
+                                <option value="7">Endocrinology</option>
+                                <option value="8">Lab tests</option>
+                                <option value="9">Physiotherapy</option>
+                                <option value="10">Proctology</option>
+                                <option value="11">Dermatology</option>
+                            </select>
+                        </div>
+                        <div class="hero__form__block u-large">
+                            <label for="date">Date</label>
+                            <input type='text' class="datepicker-here" data-language='en' required/>
+                        </div>
+                        <div class="hero__form__block u-medium">
+                            <label for="name">Your name</label>
+                            <input type="text" name="name" onkeypress="return /[a-z]/i.test(event.key)" placeholder="Enter your name" required>
+                        </div>
+                        <div class="hero__form__block u-small">
+                            <label for="phone">Your phone</label>
+                            <input type="number" name="phone" required>
+                        </div>
+                    </div>
+                    <input type="submit" value="Sign Up">
+                </form>
             </div>
         </div>
     </section>
-    <!-- END BLOG PAGE -->
+    <!-- END HERO -->
 
     <!-- BEGIN FOOTER -->
     <footer class="footer">

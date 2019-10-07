@@ -54,7 +54,19 @@
             .paragraph {
                 font-size: 1.6rem;
                 line-height: 2.6rem;
-                margin-bottom: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .data-primary,
+            .data-secondary,
+            .data-tertiary {
+                display: none;
+
+                &.active {
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 2rem;
+                }
             }
 
             form {

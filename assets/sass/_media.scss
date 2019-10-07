@@ -598,3 +598,16 @@
         }
     }
 }
+
+@include respond(phone) {
+    // HERO
+    .hero {
+        &__inner {
+            &.hero__inner--text {
+                .hero__title {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}

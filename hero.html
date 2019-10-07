@@ -20,7 +20,13 @@
     <!-- BEGIN NAVIGATION MOBILE -->
     <nav class="nav-mobile">
         <ul class="nav-mobile__list">
-            <li><a href="/#home">Home</a></li>
+            <li class="dropdown">
+                <a href="/#home">Home</a>
+                <ul class="nav-mobile__list--sub-menu">
+                    <li><a href="./home-1.html">Home 1</a></li>
+                    <li><a href="./home-2.html">Home 2</a></li>
+                </ul>
+            </li>
             <li class="dropdown">
                 <a href="/#services">Services</a>
                 <ul class="nav-mobile__list--sub-menu">
@@ -61,8 +67,12 @@
             <div class="header__inner">
                 <a href="/" class="header__inner__logo">Medical</a>
                 <ul class="header__inner__nav">
-                    <li>
+                    <li class="dropdown">
                         <a href="/#home">Home</a>
+                        <ul class="header__inner__nav--sub-menu">
+                            <li><a href="./home-1.html">Home 1</a></li>
+                            <li><a href="./home-2.html">Home 2</a></li>
+                        </ul>
                     </li>
                     <li class="dropdown">
                         <a href="/#services">Services</a>
@@ -152,10 +162,13 @@
             <div class="popup-content">
                 <h4 class="title">Contact form</h4>
                 <p class="paragraph">Thank you for choosing us. Our operator will contact you shortly</p>
+                <span class="data-primary">&nbsp;</span>
+                <span class="data-secondary">&nbsp;</span>
+                <span class="data-tertiary">&nbsp;</span>
                 <form action="#">
-                    <input type="text" name="name" id="name" placeholder="Your name">
-                    <input type="text" name="lastname" id="lastname" placeholder="Your lastname">
-                    <input type="tel" name="phone" id="phone" placeholder="Your number phone">
+                    <input type="text"  onkeypress="return /[a-z]/i.test(event.key)" name="name" id="name" placeholder="Your name">
+                    <input type="text"  onkeypress="return /[a-z]/i.test(event.key)" name="lastname" id="lastname" placeholder="Your lastname">
+                    <input type="number" name="phone" id="phone" placeholder="Your number phone">
                     <button type="submit">Get started</button>
                 </form>
             </div>
